@@ -26,5 +26,7 @@
   "concurrency_comment": "Recommended to use about half of your available cores when running stryker with angular",
   "coverageAnalysis": "perTest",
   "checkers": ["typescript"],
-  "tsconfigFile": "tsconfig.json"
+  "tsconfigFile": "tsconfig.json",
+  "ignorers": ["angular.signal-model-input-options"],
+  "plugins": ["@stryker-mutator/*", "./stryker/plugins/angular-signal-model-input-options-ignorer.js"]
 }
